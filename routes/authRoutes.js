@@ -6,11 +6,13 @@ const router=Router()
 const authControllers=require("../controllers/authControllers")
 
 // Seteo las rutas/direcciones
-// router.post("/signup",authControllers.signup_post)
-// router.get("/signup",authControllers.signup_get)
+router.post("/signup",authControllers.signup_post)
+router.get("/signup",authControllers.signup_get)
+
 
 // router.post("/signin",authControllers.login_post)
 // router.get("/signin",authControllers.login_get)
+
 
 router.post("/",authControllers.login_post)
 
